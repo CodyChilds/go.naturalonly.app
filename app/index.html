@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>naturalonly</title>
+  <!--
+    go.naturalonly.app/app?q=… is the naturalonly app's search link (app 1.0.7).
+    With the app installed, iOS opens the app (apple-app-site-association) and
+    this page never loads. Without it, this page sends the visitor to the App
+    Store, keeping any utm_* params, as naturalonly.app/app's chips always did.
+    No pixel, no cookies: the chip's tap was already counted on naturalonly.app.
+  -->
+  <meta http-equiv="refresh" content="0; url=https://apps.apple.com/app/naturalonly/id6788215014">
+  <script>
+    (function () {
+      var store = 'https://apps.apple.com/app/naturalonly/id6788215014';
+      var utm = new URLSearchParams();
+      new URLSearchParams(location.search).forEach(function (v, k) { if (/^utm_/i.test(k)) utm.append(k, v); });
+      var q = utm.toString();
+      location.replace(q ? store + '?' + q : store);
+    })();
+  </script>
+  <style>
+    body { margin: 0; padding: 48px 16px; background: #F7F4EF; color: #4a3728; font: 16px/1.5 -apple-system, system-ui, sans-serif; text-align: center; }
+    a { color: #6B3F2A; }
+  </style>
+</head>
+<body>
+  <p>Opening the App Store… <a href="https://apps.apple.com/app/naturalonly/id6788215014">Get naturalonly</a></p>
+</body>
+</html>

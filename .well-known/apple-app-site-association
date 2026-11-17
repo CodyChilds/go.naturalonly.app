@@ -1,0 +1,27 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "9QFXN8AZX2.app.naturalonly"
+        ],
+        "components": [
+          {
+            "/": "/app",
+            "?": {
+              "q": "?*"
+            },
+            "comment": "the /app search chips"
+          },
+          {
+            "/": "/app/",
+            "?": {
+              "q": "?*"
+            },
+            "comment": "the same, with the trailing slash Pages adds"
+          }
+        ]
+      }
+    ]
+  }
+}
